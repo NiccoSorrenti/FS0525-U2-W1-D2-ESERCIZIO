@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+.clearfix {
+  position: relative;
+}
+
 hr {
   display: none;
 } /* rimuove l'elemento */
@@ -31,11 +35,17 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
   }
 }
 
@@ -48,6 +58,9 @@ header {
 @media screen and (min-width: 1200px) {
   header {
     text-align: left;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
   }
   header .brand,
   header nav,
@@ -89,6 +102,17 @@ header nav li a::before {
 }
 
 /* MAIN */
+#underline {
+  position: absolute;
+  top: 95%;
+  right: 15%;
+  width: 420px;
+}
+
+#spanUnderline {
+  position: relative;
+}
+
 main {
   background-color: #fff;
   box-shadow: 0 3px 3px #444;
@@ -109,6 +133,8 @@ section {
 }
 
 section h2 {
+  position: absolute;
+  top: -10%;
   text-align: center;
   color: #333;
   font-size: 1.4rem;
@@ -220,6 +246,7 @@ iframe {
 @media screen and (min-width: 1200px) {
   iframe,
   section {
+    position: relative;
     display: inline-block;
     width: 50%;
     margin-inline: -2px;
