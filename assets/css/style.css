@@ -122,11 +122,42 @@ header nav li a::before {
   color: grey;
 }
 
+#btntornaSu {
+  border: 2px solid white;
+  padding: 15px;
+  position: absolute;
+  right: -30px;
+  bottom: 0px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#calendario {
+  border: 2px solid white;
+  padding: 15px;
+  position: absolute;
+  right: -30px;
+  bottom: 100px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#piuQuadrato {
+  border: 2px solid white;
+  padding: 15px;
+  position: absolute;
+  right: -30px;
+  bottom: 50px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 main {
   background-color: #fff;
   box-shadow: 0 3px 3px #444;
   padding: 2em 1em;
   margin-bottom: 1.5em;
+  position: relative;
 }
 @media screen and (min-width: 700px) {
   main {
@@ -232,6 +263,22 @@ h1 + p {
   }
   section {
     border-radius: 20px;
+  }
+
+  #calendario {
+    top: 10px;
+    bottom: auto;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #dddddd;
+  }
+
+  #piuQuadrato {
+    top: 80px;
+    bottom: auto;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #dddddd;
   }
 }
 
